@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Utkarsh Mohite | Portfolio</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{
+      font-family:'Poppins',sans-serif;
+      background:#0b0b0b;
+      color:#e5e7eb;
+    }
+
+    .layout{
+      display:grid;
+      grid-template-columns:300px 1fr;
+      gap:30px;
+      padding:30px;
+      min-height:100vh;
+    }
+
+    /* SIDEBAR */
+    .sidebar{
+      background:#141414;
+      border-radius:22px;
+      padding:30px 22px;
+      text-align:center;
+      box-shadow:0 20px 60px rgba(0,0,0,.7);
+    }
+
+    .avatar{
+      width:110px;
+      height:110px;
+      border-radius:20px;
+      margin:0 auto 15px;
+      background:linear-gradient(145deg,#2a2a2a,#111);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:3rem;
+    }
+
+    .name{
+      font-size:1.5rem;
+      font-weight:600;
+      margin-top:10px;
+    }
+
+    .role{
+      margin:10px auto 25px;
+      font-size:.85rem;
+      background:#1f1f1f;
+      padding:6px 14px;
+      border-radius:999px;
+      display:inline-block;
+    }
+
+    .info{
+      margin-top:30px;
+      text-align:left;
+    }
+
+    .info-item{
+      display:flex;
+      gap:14px;
+      align-items:center;
+      margin-bottom:18px;
+      font-size:.9rem;
+    }
+
+    .icon{
+      width:36px;
+      height:36px;
+      background:#1f1f1f;
+      border-radius:10px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:#facc15;
+    }
+
+    /* SOCIAL ICONS */
+    .socials{
+      margin-top:30px;
+      display:flex;
+      justify-content:center;
+      gap:18px;
+    }
+
+    .social{
+      width:44px;
+      height:44px;
+      border-radius:14px;
+      background:#1f1f1f;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:#e5e7eb;
+      font-size:1.2rem;
+      transition:all .3s ease;
+      text-decoration:none;
+    }
+
+    .social:hover{
+      transform:translateY(-4px);
+      box-shadow:0 10px 25px rgba(0,0,0,.6);
+    }
+
+    .social.linkedin:hover{
+      background:#0a66c2;
+    }
+
+    .social.instagram:hover{
+      background:linear-gradient(45deg,#f58529,#dd2a7b,#8134af);
+    }
+
+    /* MAIN */
+    .main{
+      background:#141414;
+      border-radius:22px;
+      padding:40px;
+      box-shadow:0 20px 60px rgba(0,0,0,.7);
+    }
+
+    .section{
+      margin-bottom:55px;
+    }
+
+    .section h2{
+      font-size:2rem;
+    }
+
+    .underline{
+      width:45px;
+      height:4px;
+      background:#facc15;
+      border-radius:10px;
+      margin:14px 0 28px;
+    }
+
+    .about-text{
+      line-height:1.8;
+      max-width:900px;
+      opacity:.9;
+    }
+
+    /* SKILLS */
+    .skills{
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:22px;
+    }
+
+    .skill-card{
+      background:#0f0f0f;
+      padding:26px;
+      border-radius:18px;
+      display:flex;
+      align-items:center;
+      gap:16px;
+      box-shadow:inset 0 0 0 1px #1f1f1f;
+    }
+
+    .skill-icon{
+      width:46px;
+      height:46px;
+      border-radius:12px;
+      background:#1f1f1f;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:#facc15;
+      font-weight:600;
+    }
+
+    /* CERTIFICATIONS */
+    .certs{
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:22px;
+    }
+
+    .cert{
+      background:#0f0f0f;
+      padding:26px;
+      border-radius:18px;
+      box-shadow:inset 0 0 0 1px #1f1f1f;
+    }
+
+    @media(max-width:900px){
+      .layout{grid-template-columns:1fr;}
+      .skills,.certs{grid-template-columns:1fr;}
+    }
+  </style>
+</head>
+<body>
+
+<div class="layout">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="avatar">👨‍💻</div>
+    <div class="name">Utkarsh Mohite</div>
+    <div class="role">Full Stack Java Developer</div>
+
+    <div class="info">
+      <div class="info-item">
+        <div class="icon">✉️</div>
+        utkarshmohite615@gmail.com
+      </div>
+      <div class="info-item">
+        <div class="icon">📞</div>
+        +91 8766770383
+      </div>
+      <div class="info-item">
+        <div class="icon">📍</div>
+        Maharashtra, India
+      </div>
+    </div>
+
+    <!-- SOCIAL LINKS -->
+   <div class="socials">
+  <a href="https://www.linkedin.com/in/utkarsh-mohite-266852267/" target="_blank" class="social linkedin">
+    <i class="fab fa-linkedin-in"></i>
+  </a>
+
+  <a href="https://www.instagram.com/utkarshhh113/" target="_blank" class="social instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+</div>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="main">
+
+    <section class="section">
+      <h2>About Me!</h2>
+      <div class="underline"></div>
+      <p class="about-text">
+        Welcome to my creative space! I’m Utkarsh Mohite, a Computer Science graduate and passionate Full Stack Java Developer.
+        I love turning ideas into clean, modern, and user-friendly applications. With a strong foundation in Java, Spring Boot,
+        and front-end technologies, I enjoy solving real-world problems and continuously learning new tools.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Skills</h2>
+      <div class="underline"></div>
+      <div class="skills">
+        <div class="skill-card"><div class="skill-icon">📄</div>HTML</div>
+        <div class="skill-card"><div class="skill-icon">🎨</div>CSS</div>
+        <div class="skill-card"><div class="skill-icon">⚡</div>JavaScript</div>
+        <div class="skill-card"><div class="skill-icon">☕</div>Java</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Certifications</h2>
+      <div class="underline"></div>
+      <div class="certs">
+        <div class="cert">
+          <strong>Full Stack Java Developer</strong><br>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+</div>
+
+</body>
+</html>
